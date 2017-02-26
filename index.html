@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
     <title>CAI Shanni's Second Homework</title>
     <link href="style.css" type="text/css" rel="stylesheet">
-    <link href="css/foundation.css" rel="stylesheet" type="text/css">
-    <link href="css/twentytwenty.css" rel="stylesheet" type="text/css">
+    <link href="css/foundation.css" type="text/css" rel="stylesheet">
+    <link href="css/twentytwenty.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,29 +24,40 @@
             <p>It is a chart showing the deterioration of major bank market caps since 2007. Prepared by someone at JP Morgan based on data from Bloomberg, this chart flashed across Wall Street and the financial world a few days ago, filling thousands of
                 e-mail in boxes. Putting a face on the current banking crisis it really brought home to many people on Wall Street the critical position the financial industry finds itself in.</p>
             <div class="twentytwenty-container">
-                <img src="http://ritholtz.com/wp-content/uploads/2009/02/bank-m-cap.jpg" />
-                <img src="http://www.ljplus.ru/img4/r/e/rene_korda/bank-circles.png" />
+                <img src="img/1.jpg" />
+                <img src="img/2.png" style="width:1200px;height:750px;position: center;" />
             </div>
-            <h3>The Original One</h3>
-            <a href="http://ritholtz.com/wp-content/uploads/2009/02/bank-m-cap.jpg" target="_blank"><img src="http://ritholtz.com/wp-content/uploads/2009/02/bank-m-cap.jpg" style="width:400px;height:300px" /></a>
-
-            <h3>New & Improved Chart</h3>
-            <a href="http://www.ljplus.ru/img4/r/e/rene_korda/bank-circles.png" target="_blank"><img src="http://www.ljplus.ru/img4/r/e/rene_korda/bank-circles.png" style="width:400px;height:300px" /></a>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+            <script src="js/jquery.event.move.js"></script>
+            <script src="js/jquery.twentytwenty.js"></script>
+            <script>
+                $(window).load(function() {
+                    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
+                        default_offset_pct: 0.7
+                    });
+                    $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
+                        default_offset_pct: 0.3,
+                        orientation: 'vertical'
+                    });
+                });
+            </script>
+            <br>
+            <br>
             <p>Too bad the original chart is wrong.
                 <br> It is a simple error, really. The bubbles are two-dimensional so they imply that the way to see change is by comparing AREAS of the bubbles. But if you look at the numbers themselves you can see that's not the case.
                 <br> Take CitiGroup, for example. The CITI market cap dropped from $255 billion to $19 billion - a difference of 13.4X. If we're really comparing the areas of the bubbles, that means 13.4 of those tiny CitiGroup-of-today bubbles should
                 precisely fill the big CitiGroup-of-the-good-old-days bubble. Only they won't. As a matter of fact it would take about 13.4 times as many little bubbles to fill the big bubble as the chart preparer thought or 179.64 little bubbles. Pir
                 squared, remember? This is because the intended comparison wasn't two-dimensional but one-dimensional — the chart maker was intending we compare the DIAMETERS of the bubbles, not their areas.
                 <br>(looks like JPM fixed their own chart)
-                <br>There are two more revised graphs:</p>
+                <br><br>There are two more revised graphs:</p>
             <div class="row">
                 <div class="col-sm-6">
                     <h3>Bar Chart</h3>
-                    <a href="http://ritholtz.com/wp-content/uploads/2009/02/market-cap-banks-with-average.jpg" target="_blank"><img src="http://ritholtz.com/wp-content/uploads/2009/02/market-cap-banks-with-average.jpg" style="width:400px;height:300px" /></a>
+                    <a href="http://ritholtz.com/wp-content/uploads/2009/02/market-cap-banks-with-average.jpg" target="_blank"><img src="http://ritholtz.com/wp-content/uploads/2009/02/market-cap-banks-with-average.jpg" style="width:450px;height:300px" /></a>
                 </div>
                 <div class="col-sm-6">
                     <h3>Radar Plotting Chart</h3>
-                    <a href="http://ritholtz.com/wp-content/uploads/2009/02/radar-chart-shrinkage-in-market-value-of-major-banks-2007q2-to-20-jan-2009.png" target="_blank"><img src="http://ritholtz.com/wp-content/uploads/2009/02/radar-chart-shrinkage-in-market-value-of-major-banks-2007q2-to-20-jan-2009.png" style="width:400px;height:300px" /></a>
+                    <a href="http://ritholtz.com/wp-content/uploads/2009/02/radar-chart-shrinkage-in-market-value-of-major-banks-2007q2-to-20-jan-2009.png" target="_blank"><img src="http://ritholtz.com/wp-content/uploads/2009/02/radar-chart-shrinkage-in-market-value-of-major-banks-2007q2-to-20-jan-2009.png" style="width:450px;height:300px" /></a>
                 </div>
             </div>
             <br>
