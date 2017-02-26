@@ -1,0 +1,22 @@
+body {
+    margin-top: 60px;
+}
+
+.image {
+    background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488095629566&di=43e20ccee99b6888e32fbce430c2a18a&imgtype=0&src=http%3A%2F%2Ffile28.mafengwo.net%2FM00%2FE4%2FF3%2FwKgB6lQagO-AMRYIAAfCBOQ6SI483.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 220px;
+}
+
+h1 {
+    font-family: 'Rammetto One', cursive;
+}
+
+.bar-block {
+    background-color: lightseagreen;
+    color: white;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
